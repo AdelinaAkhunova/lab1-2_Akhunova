@@ -1,0 +1,581 @@
+body{
+    background:#E3FDFD;
+    background-color: #E3FDFD;
+    color: #F6F6F6; 
+    border: solid thick;
+    display: flex;
+    font-family: Arial;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+}
+@media screen and (min-width: 1470px) and (max-width: 1920px){
+    body{
+        width: 70%;
+    }
+    .main-block{
+        flex-flow: row nowrap;
+    }
+    .header-2 {   
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .main-block-left{
+        flex: 40%;
+    }
+    .main-column{
+        flex:80%;
+    }
+    .main-block-right{
+        flex: 60%;
+    }
+    .left-column{
+        flex: 20%;
+    }
+    .pictures{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .fake-photo{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .News{
+        font-size: 30px;
+    }
+    .Status{
+        font-size: 24px;
+    }
+    .fake-picture{
+        width: 150px;
+        height: 150px;
+    }
+    .Profile{
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .squares{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left-menu{
+        width: auto;
+        flex:100%;
+    }
+    .Interractions{
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+}
+    
+@media screen and (min-width: 300px) and (max-width: 600px){
+    .header-2 {   
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+      }
+  
+      .main-column{
+          flex:100%;
+      }
+      body{
+          width: auto;
+      }
+      .main-block{
+          flex-flow: column wrap;
+      }
+      
+      .Photo{
+          width: auto;
+          height: auto;
+      }
+      .left-menu{ 
+          width: auto;
+          justify-content: center;
+          flex:100%;
+      }
+      
+      .Interractions{
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+      }
+      .Profile{
+          justify-content: center;
+          align-content: center;
+      }
+      
+      .News{ 
+          font-size: 20px;
+          flex-wrap: nowrap;
+      }
+      .Status{
+          font-size: 17px;
+          flex-wrap: nowrap;
+      }
+      .Follovers {
+          width: auto;
+      }
+      .fake-picture{
+          width: 100%;
+          height: 340px;
+      }
+      .main-block-right{
+          width: auto;
+          flex:100%;
+      }
+      .squares{
+          flex-flow: column wrap;
+          justify-content: space-evenly;
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+      .pictures{
+          flex-wrap: wrap;
+          flex-direction: column;
+      }
+      .fake-photo{
+          flex-flow: column wrap;
+          justify-content: center;
+      }
+}
+.header-1{
+    display: flex;
+    justify-content: space-between;
+    
+    background: #71C9CE;
+    border: solid medium;
+    color: white;
+    width: auto;
+}
+.Settings{
+    color: white;
+	text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: auto;
+    width: auto;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    background-color: #A6E3E9;
+	font-size: 22px; 
+   
+}
+.Textage{
+    height: 35px;
+    width: 180px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px; /**отступы от краев ящика**/
+    padding-bottom: 10px;
+    background-color: #A6E3E9; /**цвет ящика**/
+    font-size: 32px;/**размер шрифта**/
+    color:white; /** цвет обводкт**/
+    border: solid thick;
+    border-radius: 0.6em;
+    text-align: center;
+    text-decoration-line: none;
+    -webkit-text-stroke-color: #71C9CE;
+    -webkit-text-stroke-width: 1px ;
+}
+.header-2{
+    display: flex;
+    background-color: #E3FDFD;
+}
+.left-column{
+    display: flex;
+    background: #CBF1F5;/*цвет ящика */
+    /*color: black;цвет рамки */
+    border: solid medium;
+}
+.main-column{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    
+}
+.left-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;  
+}
+.Profile{
+    width:auto;
+    display: flex;
+	text-align: left;
+    padding-left: 5px; /*отступ текста слева */
+    background-color:#71C9CE ;/*цвет ящика */
+    border: solid medium white;
+    list-style: none;
+    color:white;
+    height: 35px;
+    font-size: 25px;
+    align-items: center;
+    text-decoration-line: none;
+    font-weight: 100;
+    /*width: 20%;*/
+}
+
+.top-string{
+    display: flex;
+    width: auto;
+    align-items: center;/*ак flex элементы будут располагаться вдоль поперечной оси на заданной строке*/
+    justify-content: space-between; /*распределяет элементы - 1 слевf 2справа*/
+    flex-wrap: nowrap; /*элеиенты пишутся в линию*/
+    flex-direction: row; /*элементы рапсоложены слева направо*/
+    background: #CBF1F5; 
+    height: 45px;
+}
+.News{
+    color: rgb(59, 138, 211);
+    
+    text-align: center; /*Выравнивание текста по центру.*/
+    padding-left: 10px;/*отступ текста слева */
+    padding-right: 10px;/*отступ текста справа*/
+}
+.Status{
+    color: rgb(59, 138, 211);
+    
+    text-align: center; /*Выравнивание текста по центру.*/
+    padding-left: 10px;/*отступ текста слева */
+    padding-right: 15px;/*отступ текста справа*/
+}
+.main-block{
+    display: flex;
+    
+}
+.main-block-left{
+    display: block;
+    flex-wrap: wrap;/*flex элементы будут переноситься на несколько строк, от верха к низу.*/
+    flex-direction: column; /*сверху вниз*/
+    margin: 20px;  
+}
+.Photo{
+    height: 300px;
+    width: auto;
+    background: #CBF1F5; /*цвет самого контейнира*/
+    color: white; /*цвет текста*/
+    display: flex;
+    text-align: center; /*расположение текста*/
+    justify-content: center;/*распределение элементов*/
+    align-items: center;/* выравнивает именно «items», т.е. элементы — внутри строк флексбокса */
+    font-size: 30px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color:#71C9CE; /*цвет оконтовки текста*/
+    font-weight:900;
+    margin-bottom: 30px;
+    border: solid thin;
+    border-radius: 0.6em;
+    color:white;
+}
+.Interractions{
+    display: flex;
+    flex-direction: row; /*расположение контента в линию, а не в колонку например */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+    
+}
+.Message{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:#A6E3E9;
+    font-size: 20px;
+    height: auto;
+    color: white;
+    flex-wrap: wrap;/*flex элементы будут переноситься на несколько строк, от верха к низу.*/
+    text-align: center;
+    align-items: center;
+    border: solid thin;
+    border-radius: 0.6em;
+    color:white;
+}
+.Be-friends{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;/*flex элементы будут переноситься на несколько строк, от верха к низу.*/
+    background:#A6E3E9;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    height: auto;
+    border: solid thin;
+    border-radius: 0.6em;
+    color:white;
+}
+.Followers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.Count-followers{
+    text-align: center;
+    color: #71C9CE;
+    font-size: 18px;
+    
+}
+.Count{
+    display: flex;
+    width: 210px;
+    height: 30px;
+    background: #CBF1F5;
+    justify-content: center;
+    margin-bottom: 10px; /*расстояние до след контейнера*/
+    align-items: center;
+    margin-bottom: 30px;
+    border: solid thin;
+    border-radius: 0.6em;
+    color:white;
+} 
+.block-friends{
+    background-color:#CBF1F5;
+    width: auto;
+    margin-bottom: 20px;
+}
+.Friends{
+    
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: left;
+    padding-left: 10px;
+    background-color: #71C9CE;
+    align-content: center;
+    
+    color: white;
+    background:#71C9CE
+
+}
+.squares{
+    display: flex;
+    align-content: center; /*контент находится в центре*/
+    flex-flow: row wrap; /*равномерное распределение контента (квадратов:)*/
+    justify-content: space-evenly; 
+    /*flex-wrap: wrap; flex элементы будут переноситься на несколько строк, от верха к низу.
+    flex-direction: row;расположение контента в линию, а не в колонку например */
+    margin-top: 10px;
+    margin-bottom: 10px; /*расстояние до след блока*/ 
+    background: #CBF1F5;
+    border: none;
+    
+}
+.Square{
+    width: 50px;
+    height: 50px;
+    color: #CBF1F5;
+    background: white;
+    border: solid thin;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.main-block-right{
+    color: white; 
+    margin: 10px; 
+    display: flex;
+    flex-wrap: wrap;/*flex элементы будут переноситься на несколько строк, от верха к низу.*/
+    flex-direction: column;/*расположение контента в колонку, а не в линию например */
+}
+.Name{
+    display: flex;
+    color:white; /**цвет шрифта**/
+    flex-wrap: nowrap;
+    background: #71C9CE;
+    width: auto;
+    height: auto;
+    font-size: 25px; /**размер шрифта**/
+    padding: 5px; /* устанавливает внутренние отступы/поля со всех сторон элемента.*/
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px; /*расстояние до след блока*/ 
+    justify-content: center;
+    flex-direction: row;
+}
+.Information{
+    color: #71C9CE;
+    background: #CBF1F5;
+    width: auto;
+    height: 160px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+
+}
+.text{
+    padding-left: 15px;
+    font-size: 18px;
+    padding-bottom: 7px;
+}
+.info{ 
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    font-size: 18px;
+    
+    
+}
+.Picture{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    color: white;
+    background: #71C9CE;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pictures{
+    background-color: #CBF1F5;
+    width: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+    display: flex; 
+}
+.fake-photo{
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fake-picture{
+    
+    color: #71C9CE;
+    background: white;
+    border: solid thin;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.posts{
+    display: flex;
+    width: auto;
+    background-color:#CBF1F5;
+    flex-direction: column;
+    border: solid thin;
+}
+.topic{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #71C9CE;
+    border: solid thin;
+    width: auto;
+    height: auto;
+}
+
+.count-posts{ 
+    color: white;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.find{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    color: #71C9CE;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: white;
+    font-size: 17px;
+    margin: 5px;
+}
+
+.one-post{
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.left-part{
+    display: flex;
+    flex: 15%;
+}
+
+.min-picture{
+    display: flex;
+    background: #71C9CE;
+    color: white;
+    font-size: 11px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.right-part{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex:85%;
+}
+
+.header-name{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    color: #71C9CE;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.post-post-post{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #71C9CE;
+    border: solid thin;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    height: 200px;
+   
+}
+.Friends-Online{
+    display: flex;
+    width: auto;
+    height: 30px;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    color: white;
+    background: #71C9CE;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.block-friends-online{
+    background-color: #CBF1F5;
+    width: auto;
+}
